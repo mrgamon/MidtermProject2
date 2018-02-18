@@ -24,4 +24,19 @@ export class ProductService {
 
       });
     }
+
+    updateProduct(product : Product){
+      this.productList.update(product.$key,
+        {
+          name: product.name,
+          description: product.description,
+          category: product.category,
+          price: product.price
+  
+        });
+    }
+
+    deleteProduct($key: string){
+      this.productList.remove($key);
+    }
 }
