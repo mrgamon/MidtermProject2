@@ -5,11 +5,17 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 import { AppComponent } from './app.component';
 
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProductsComponent,
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
